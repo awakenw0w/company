@@ -23,7 +23,10 @@ public class Main {
         // Вывод информации о всех компаниях
         System.out.println("Все компании: ");
         for (Company company : companies) {
-            
+            company.getName();
+            company.getWorkers();
+            company.getSalary();
+            System.out.println();
         }
     }
 }
