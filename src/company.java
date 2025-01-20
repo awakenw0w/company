@@ -10,19 +10,19 @@ public class Company {
         this.name = name;
         this.workers = workers;
         this.salary = salary;
-        // делал по примеру из учебника, а зачем это делать не совсем понял
+        // ????? делал по примеру из учебника, а зачем это делать не совсем понял
     }
 
     // выводим название компании
-    public String getName() {
+    public void getName() {
         System.out.println("Название компании: "+ name);
     }
     // выводим количество сотрудников
-    public int getWorkers() {
+    public void getWorkers() {
         System.out.println("Количество сотрудников: " + workers);
     }
     // выводим общий фонд зарплаты
-    public double getSalary(){
+    public void getSalary(){
         System.out.println("Общий фонд зарплаты: " + salary);
     }
     
