@@ -1,4 +1,4 @@
-public class company {
+public class Company {
 
     //поля класса
     private String name; // название компании
@@ -15,15 +15,15 @@ public class company {
 
     // выводим название компании
     public String getName() {
-        System.out.println(name);
+        System.out.println("Название компании: "+ name);
     }
     // выводим количество сотрудников
     public int getWorkers() {
-        System.out.println(workers);
+        System.out.println("Количество сотрудников: " + workers);
     }
     // выводим общий фонд зарплаты
     public double getSalary(){
-        System.out.println(salary);
+        System.out.println("Общий фонд зарплаты: " + salary);
     }
     
 }
