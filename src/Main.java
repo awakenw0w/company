@@ -24,7 +24,7 @@ public class Main {
         // удаление компании из массива
         System.out.println("Введите название компании, которое нужно удалить: ");
         String deleteName = s.nextLine(); // пользователь вводит название компании которую хочет удалить
-        companies.remove(deleteName); // компания удаляется из динамического массива 
+        companies.remove(deleteName); // компания удаляется из динамического массива
 
         for(company company : companies) {
             System.out.println(company);
