@@ -1,4 +1,4 @@
-public class Company {
+public class company {
 
     //поля класса
     private String name; // название компании
@@ -6,24 +6,16 @@ public class Company {
     private double salary; // общий фонд зарплаты
 
     // инициализируем поля
-    public Company(String name, int workers, double salary) {
+    public company(String name, int workers, double salary) {
         this.name = name;
         this.workers = workers;
         this.salary = salary;
         // ????? делал по примеру из учебника, а зачем это делать не совсем понял
-    }
 
-    // выводим название компании
-    public void getName() {
-        System.out.println("Название компании: "+ name);
     }
-    // выводим количество сотрудников
-    public void getWorkers() {
-        System.out.println("Количество сотрудников: " + workers);
+    @Override //данный метод переопределяет метод суперкласса.
+    // Это помогает избежать ошибок, связанных с неправильным названием метода
+    public String toString() {
+        return "Название: " + name + ", Работников: " + workers + ", Зарплата: " + salary;
     }
-    // выводим общий фонд зарплаты
-    public void getSalary(){
-        System.out.println("Общий фонд зарплаты: " + salary);
-    }
-    
 }
